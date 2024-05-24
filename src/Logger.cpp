@@ -81,9 +81,9 @@ namespace al
 
     void Logger::QueueMessage(LogMessagePtr msgPtr)
     {
-        m_Queue.push([this, msgPtr = std::move(msgPtr)]
-        {
-            CallSinks(msgPtr);
-        });
+        //m_Queue.push([this, msgPtr = std::move(msgPtr)]
+        //{
+        //    CallSinks(msgPtr);
+        //});
     }
 }
