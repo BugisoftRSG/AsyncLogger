@@ -71,12 +71,12 @@ namespace al
 
     void Logger::FlushQueueImpl()
     {
-        while (!m_Queue.empty())
-        {
-            std::function<void()> func;
-            m_Queue.wait_and_pop(func);
-            func();
-        }
+        //while (!m_Queue.empty())
+        //{
+        //    std::function<void()> func;
+        //    m_Queue.wait_and_pop(func);
+        //    func();
+        //}
     }
 
     void Logger::QueueMessage(LogMessagePtr msgPtr)
